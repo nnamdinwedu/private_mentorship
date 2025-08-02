@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Forex Trading Mentorship</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007bff; /* Blue */
+            --secondary-color: #6c757d; /* Grey */
+            --text-color: #333;
+            --bg-light: #f8f9fa;
+            --bg-dark: #343a40;
+            --white: #fff;
+            --dark-blue: #0056b3;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--bg-light);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.3em;
+            font-weight: 300;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        section:nth-child(even) {
+            background-color: var(--white);
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .usp-section p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            color: var(--secondary-color);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .feature-item svg {
+            color: var(--primary-color);
+            min-width: 24px;
+            height: 24px;
+        }
+
+        .feature-item p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        .mentorship-structure {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .week-card {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .week-card h3 {
+            color: var(--dark-blue);
+            margin-top: 0;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+
+        .week-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0 0;
+        }
+
+        .week-card ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            color: var(--text-color);
+        }
+
+        .week-card ul li::before {
+            content: '•';
+            color: var(--primary-color);
+            font-size: 1.2em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .pricing-section {
+            background-color: var(--bg-light);
+            padding: 60px 0;
+        }
+
+        .pricing-tiers {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .price-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            padding: 35px;
+            flex: 1;
+            min-width: 280px;
+            max-width: 350px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .price-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .price-card h3 {
+            color: var(--primary-color);
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .price-card .price {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--dark-blue);
+            margin-bottom: 20px;
+        }
+
+        .price-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .price-card ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            color: var(--text-color);
+        }
+
+        .price-card ul li::before {
+            content: '✔';
+            color: green;
+            font-size: 1.2em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .why-different {
+            background-color: var(--bg-light);
+            padding: 60px 0;
+        }
+
+        .why-different ul {
+            list-style: none;
+            padding: 0;
+            margin: 40px auto 0 auto;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .why-different ul li {
+            background-color: var(--white);
+            margin-bottom: 20px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            font-size: 1.1em;
+            color: var(--text-color);
+        }
+
+        .testimonial {
+            background-color: var(--white);
+            padding: 60px 0;
+        }
+
+        .testimonial-content {
+            max-width: 800px;
+            margin: 0 auto;
+            font-style: italic;
+            font-size: 1.2em;
+            color: var(--secondary-color);
+        }
+
+        .testimonial-author {
+            margin-top: 20px;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 1.1em;
+        }
+
+        .cta-section {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .cta-section p {
+            font-size: 1.4em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .cta-buttons a {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-buttons a:hover {
+            background-color: var(--dark-blue);
+        }
+
+        .contact-section {
+            padding: 40px 0;
+            text-align: center;
+            background-color: var(--bg-light);
+            font-size: 1.1em;
+        }
+
+        .contact-section a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: var(--bg-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .features-grid, .mentorship-structure {
+                grid-template-columns: 1fr;
+            }
+
+            .price-card {
+                max-width: 100%;
+            }
+
+            .cta-buttons a {
+                display: block;
+                margin: 15px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Master Forex Trading with Structure, Discipline & Confidence</h1>
+            <p>A private mentorship designed to help you stop second-guessing and start executing with precision using a proven Smart Money-based system.</p>
+            <p>No more hopping from signal to signal. No more confusion.</p>
+            <p>Just a clear, confirmation-based trading framework that actually works — with real support and accountability.</p>
+        </div>
+    </header>
+
+    <section id="what-youll-learn">
+        <div class="container">
+            <h2>What You’ll Learn</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trending-up"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                    <p>How to trade **clean market structure** with SMC logic</p>
+                </div>
+                <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <p>How to identify valid **supply/demand zones** and refine entries</p>
+                </div>
+                <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-crosshair"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg>
+                    <p>How to use **Fair Value Gaps (FVGs), CSDs, and inducement** for sniper entries</p>
+                </div>
+                <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    <p>How to **manage risk, set clear 1:2 RR targets**, and journal effectively</p>
+                </div>
+                <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    <p>How to build **emotional resilience** and stick to your rules</p>
+                </div>
+                <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-lock"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                    <p>How to make your system **muscle memory** and protect your capital</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="mentorship-structure">
+        <div class="container">
+            <h2>Mentorship Structure (6 Weeks)</h2>
+            <p style="font-size: 1.1em; max-width: 700px; margin: 0 auto 50px auto; color: var(--secondary-color);">This isn’t just a course — it’s a full transformation system tailored to your trading and mindset growth.</p>
+            <div class="mentorship-structure">
+                <div class="week-card">
+                    <h3>📘 WEEK 1: Foundations & Market Logic</h3>
+                    <ul>
+                        <li>Setting expectations for your growth journey</li>
+                        <li>Market structure: HH, HL, BOS, CHoCH</li>
+                        <li>Liquidity, inducement & trap logic</li>
+                        <li>Why most traders fail: psychology over strategy</li>
+                    </ul>
+                </div>
+                <div class="week-card">
+                    <h3>🔍 WEEK 2: Zones of Interest</h3>
+                    <ul>
+                        <li>Identifying valid supply/demand zones</li>
+                        <li>Understanding internal vs external structure</li>
+                        <li>Spotting Fair Value Gaps (FVGs) and mitigations</li>
+                        <li>Pinpointing entry zones: CSDs, FVGs, unmitigated areas</li>
+                    </ul>
+                </div>
+                <div class="week-card">
+                    <h3>💣 WEEK 3: Confirmation-Based Entry System</h3>
+                    <ul>
+                        <li>Layering entries: buffer → refined → confirmation</li>
+                        <li>Candlestick logic: momentum bodies, opposite candles</li>
+                        <li>Using inducement zones and trapping setups</li>
+                    </ul>
+                </div>
+                <div class="week-card">
+                    <h3>💼 WEEK 4: Execution & Risk Management</h3>
+                    <ul>
+                        <li>Enforcing your 1:2 RR rule (no negotiation)</li>
+                        <li>Trade management: when to BE, scale in, or walk away</li>
+                        <li>Weekend rules for open trades</li>
+                        <li>Journaling via Notion/Google Sheets (templates included)</li>
+                    </ul>
+                </div>
+                <div class="week-card">
+                    <h3>🧠 WEEK 5: Psychology & Performance Mastery</h3>
+                    <ul>
+                        <li>Detaching from trade outcomes</li>
+                        <li>Recovering from a losing streak (3.5% weekly rule)</li>
+                        <li>Building trust in your system through repetition</li>
+                        <li>Bonus: Sex drive, abstinence & focus (yes, it matters)</li>
+                    </ul>
+                </div>
+                <div class="week-card">
+                    <h3>🧪 WEEK 6: Trade Walkthroughs + Evaluation</h3>
+                    <ul>
+                        <li>You analyze trades with mentees</li>
+                        <li>Real-time feedback sessions</li>
+                        <li>Final evaluation quiz or review discussion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2>Pricing Options</h2>
+            <p style="font-size: 1.1em; max-width: 700px; margin: 0 auto 50px auto; color: var(--secondary-color);">You choose your level of commitment. No fluff — just pure transformation.</p>
+            <div class="pricing-tiers">
+                <div class="price-card">
+                    <h3>Core</h3>
+                    <div class="price">₦350,000</div>
+                    <ul>
+                        <li>Weekly live Zooms</li>
+                        <li>Workbook PDFs</li>
+                        <li>Past replays</li>
+                        <li>Private community</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Premium</h3>
+                    <div class="price">₦500,000</div>
+                    <ul>
+                        <li>All Core features</li>
+                        <li>Personalized trade feedback</li>
+                        <li>Notion journaling reviews</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>1-on-1</h3>
+                    <div class="price">₦750,000+</div>
+                    <ul>
+                        <li>Everything above</li>
+                        <li>Weekly 1-on-1 calls</li>
+                        <li>Full trade audits</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="margin-top: 40px; font-size: 1.1em; color: var(--secondary-color);">Limited slots per batch to ensure quality.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="why-different" class="why-different">
+        <div class="container">
+            <h2>Why This Isn’t Like Other Mentorships</h2>
+            <ul>
+                <li>You’re not joining a signal group.</li>
+                <li>You’re learning a repeatable, confident system that can adapt with you — for life.</li>
+                <li>This is for those ready to stop guessing and start growing.</li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="testimonial" class="testimonial">
+        <div class="container">
+            <h2>Words from Nnamdi</h2>
+            <p class="testimonial-content">
+                “I’ve been where you are. Confused. Chasing. Doubting. I’ve missed winning trades, exited early, over-risked, underperformed — but I never quit. Now, I trade with clarity and structure. This mentorship is your shortcut to the confidence I now have.”
+            </p>
+            <p class="testimonial-author">— Nnamdi</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <p>Ready to transform your trading?</p>
+            <div class="cta-buttons">
+                <a href="#" target="_blank">Join the Waitlist</a>
+                <a href="#" target="_blank">Apply for the Next Cohort</a>
+            </div>
+            <p style="font-size: 1.1em; margin-top: 30px; margin-bottom: 0;">Let’s build the version of you that trades without fear.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Have Questions?</h2>
+            <p>DM me on Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
+            <p>Or email: <a href="mailto:yourname@email.com">yourname@email.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Master Forex Trading Mentorship. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
