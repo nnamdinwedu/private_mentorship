@@ -7,13 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #007bff; /* Blue */
-            --secondary-color: #6c757d; /* Grey */
+            --primary-color: #d4af37; /* Gold from the logo */
+            --secondary-color: #a98d36; /* Bronze from the logo */
             --text-color: #333;
             --bg-light: #f8f9fa;
-            --bg-dark: #343a40;
+            --bg-dark: #1a1a1a; /* Dark background from the logo */
             --white: #fff;
-            --dark-blue: #0056b3;
+            --dark-blue: #2c2c2c; /* A dark gray to blend with the logo's dark tones */
         }
 
         body {
@@ -201,7 +201,7 @@
 
         .price-card ul li::before {
             content: '✔';
-            color: green;
+            color: var(--primary-color);
             font-size: 1.2em;
             position: absolute;
             left: 0;
@@ -267,7 +267,7 @@
         .cta-buttons a {
             display: inline-block;
             background-color: var(--primary-color);
-            color: var(--white);
+            color: var(--dark-blue);
             padding: 15px 30px;
             border-radius: 5px;
             text-decoration: none;
@@ -277,7 +277,7 @@
         }
 
         .cta-buttons a:hover {
-            background-color: var(--dark-blue);
+            background-color: var(--secondary-color);
         }
 
         .contact-section {
