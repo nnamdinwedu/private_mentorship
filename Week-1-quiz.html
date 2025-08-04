@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Quiz: Forex Basics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+        }
+        .quiz-container {
+            background-color: #2c2c2c;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            padding: 3rem;
+            width: 100%;
+            max-width: 800px;
+        }
+        .quiz-container h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        .quiz-container p {
+            font-size: 1.25rem;
+            color: #a98d36;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .question {
+            background-color: #3a3a3a;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+        .question h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+        .options-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .option {
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+        .option label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s ease;
+        }
+        .option label:hover {
+            background-color: #4a4a4a;
+        }
+        .option input[type="radio"] {
+            margin-right: 1rem;
+            accent-color: #d4af37;
+        }
+        #results {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            font-weight: 600;
+        }
+        #score {
+            color: #d4af37;
+        }
+        .submit-button {
+            background-color: #d4af37;
+            color: #1a1a1a;
+            font-weight: 700;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            font-size: 1.25rem;
+            margin-top: 2rem;
+            transition: background-color 0.2s ease;
+        }
+        .submit-button:hover {
+            background-color: #a98d36;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Week 1 Quiz: Forex Fundamentals</h1>
+        <p>Test your knowledge on the basics of Forex, currency pairs, and key terminology.</p>
+        
+        <div id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>1. What does the term "Forex" stand for?</h3>
+                <ul class="options-list">
+                    <li class="option"><label><input type="radio" name="q1" value="a"> Foreign Exchange Market</label></li>
+                    <li class="option"><label><input type="radio" name="q1" value="b"> Futures and Options Exchange</label></li>
+                    <li class="option"><label><input type="radio" name="q1" value="c"> Federal Reserve Exchange</label></li>
+                    <li class="option"><label><input type="radio" name="q1" value="d"> Financial Order Exchange</label></li>
+                </ul>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>2. Which of the following is considered a "Major Pair"?</h3>
+                <ul class="options-list">
+                    <li class="option"><label><input type="radio" name="q2" value="a"> EUR/GBP</label></li>
+                    <li class="option"><input type="radio" name="q2" value="b"> USD/TRY</label></li>
+                    <li class="option"><label><input type="radio" name="q2" value="c"> EUR/USD</label></li>
+                    <li class="option"><label><input type="radio" name="q2" value="d"> GBP/JPY</label></li>
+                </ul>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>3. The difference between the Bid and Ask price is known as the:</h3>
+                <ul class="options-list">
+                    <li class="option"><label><input type="radio" name="q3" value="a"> Pip</label></li>
+                    <li class="option"><label><input type="radio" name="q3" value="b"> Spread</label></li>
+                    <li class="option"><label><input type="radio" name="q3" value="c"> Margin</label></li>
+                    <li class="option"><label><input type="radio" name="q3" value="d"> Leverage</label></li>
+                </ul>
+            </div>
+            
+            <!-- Question 4 -->
+            <div class="question">
+                <h3>4. The smallest unit of price movement in a currency pair is called a:</h3>
+                <ul class="options-list">
+                    <li class="option"><label><input type="radio" name="q4" value="a"> Point</label></li>
+                    <li class="option"><label><input type="radio" name="q4" value="b"> Tick</label></li>
+                    <li class="option"><label><input type="radio" name="q4" value="c"> Spread</label></li>
+                    <li class="option"><label><input type="radio" name="q4" value="d"> Pip</label></li>
+                </ul>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <h3>5. Which two market sessions have the highest volume and volatility overlap?</h3>
+                <ul class="options-list">
+                    <li class="option"><label><input type="radio" name="q5" value="a"> Sydney and Tokyo</label></li>
+                    <li class="option"><label><input type="radio" name="q5" value="b"> Tokyo and London</label></li>
+                    <li class="option"><label><input type="radio" name="q5" value="c"> London and New York</label></li>
+                    <li class="option"><label><input type="radio" name="q5" value="d"> New York and Sydney</label></li>
+                </ul>
+            </div>
+            
+            <button class="submit-button" onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+
+        <div id="results" class="hidden">
+            <h2>Your Score: <span id="score"></span> / 5</h2>
+        </div>
+
+    </div>
+
+    <script>
+        const answers = {
+            q1: "a",
+            q2: "c",
+            q3: "b",
+            q4: "d",
+            q5: "c"
+        };
+
+        function submitQuiz() {
+            let score = 0;
+            const form = document.getElementById("quiz-form");
+            
+            for (const question in answers) {
+                const selected = form.querySelector(`input[name="${question}"]:checked`);
+                if (selected && selected.value === answers[question]) {
+                    score++;
+                }
+            }
+
+            const resultsDiv = document.getElementById("results");
+            const scoreSpan = document.getElementById("score");
+            scoreSpan.textContent = score;
+            
+            form.style.display = 'none';
+            resultsDiv.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
