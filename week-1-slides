@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1: Forex Basics for Beginners</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .slide {
+            background-color: #2c2c2c;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            padding: 4rem 6rem;
+            margin: 2rem;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: left;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 1rem;
+            letter-spacing: -0.05em;
+        }
+        .slide h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #a98d36;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .slide p {
+            font-size: 1.5rem;
+            color: #e0e0e0;
+            margin-bottom: 1.5rem;
+        }
+        .slide ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .slide ul li {
+            position: relative;
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            padding-left: 2rem;
+        }
+        .slide ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #d4af37;
+            font-weight: 700;
+        }
+        .analogy {
+            background-color: #3a3a3a;
+            border-left: 4px solid #a98d36;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            margin-top: 2rem;
+            font-size: 1.25rem;
+            font-style: italic;
+        }
+        .highlight {
+            color: #d4af37;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center">
+
+    <!-- Slide 1: Title -->
+    <div class="slide max-w-4xl w-full">
+        <h1 class="text-7xl">WEEK 1:</h1>
+        <h2 class="text-6xl">Forex Basics for Beginners</h2>
+        <p class="text-4xl text-center w-full mt-8">Building a Strong Foundation in the Forex Market</p>
+    </div>
+
+    <!-- Slide 2: Objective -->
+    <div class="slide max-w-4xl w-full">
+        <h1>Objective for This Week</h1>
+        <p>By the end of this week, you will:</p>
+        <ul class="text-2xl">
+            <li>Confidently understand what Forex is and how it works.</li>
+            <li>Grasp the core terminology and why it's important.</li>
+            <li>Know how to set up your essential trading tools.</li>
+            <li>Understand why <span class="highlight">Risk-Reward</span> is the backbone of any profitable trader.</li>
+        </ul>
+    </div>
+
+    <!-- Slide 3: What is Forex? -->
+    <div class="slide max-w-4xl w-full">
+        <h1>Lesson 1: Introduction to Forex</h1>
+        <h2 class="text-4xl">What is Forex?</h2>
+        <p>The <span class="highlight">Foreign Exchange Market</span> — where currencies are bought and sold.</p>
+        <p>It's the largest financial market in the world, with over <span class="highlight">$6 trillion</span> traded daily!</p>
+        <h2 class="text-4xl">Why Trade Forex?</h2>
+        <ul>
+            <li>High liquidity and 24/5 accessibility.</li>
+            <li>Opportunities to profit whether the market is going up or down.</li>
+            <li>Flexibility for part-time or full-time income.</li>
+        </ul>
+    </div>
+
+    <!-- Slide 4: Currency Pairs -->
+    <div class="slide max-w-4xl w-full">
+        <h1>Lesson 2: Currency Pairs & Sessions</h1>
+        <h2 class="text-4xl">Currency Pairs</h2>
+        <p>Currencies are always traded in pairs, like a team.</p>
+        <p class="text-2xl mt-4"><span class="highlight">Example:</span> <span class="highlight">EUR/USD = 1.1000</span></p>
+        <div class="analogy">
+            <p>Think of it like this: If you go to a foreign country, you exchange your money for their money. That exchange rate is what we trade in Forex.</p>
+        </div>
+        <h2 class="text-4xl">Types of Pairs</h2>
+        <ul>
+            <li><span class="highlight">Major Pairs:</span> (e.g., EUR/USD, GBP/USD) - Most traded.</li>
+            <li><span class="highlight">Minor Pairs:</span> (e.g., EUR/GBP, GBP/JPY) - Less common.</li>
+            <li><span class="highlight">Exotic Pairs:</span> (e.g., USD/TRY, EUR/ZAR) - Least common, higher spread.</li>
+        </ul>
+    </div>
+
+    <!-- Slide 5: Market Sessions -->
+    <div class="slide max-w-4xl w-full">
+        <h1>Market Sessions</h1>
+        <p>The Forex market is open 24 hours a day, but activity changes depending on which global market is open.</p>
+        <ul class="text-2xl">
+            <li><span class="highlight">Sydney & Tokyo:</span> (Night/Morning Sessions) - Lower volume.</li>
+            <li><span class="highlight">London:</span> (The "Engine") - High volume and volatility.</li>
+            <li><span class="highlight">New York:</span> (The "Powerhouse") - High volume and volatility.</li>
+        </ul>
+        <div class="analogy">
+            <p>The best time to trade is often during the <span class="highlight">London–New York overlap</span> (1 PM – 5 PM GMT), when the two biggest markets are active at the same time.</p>
+        </div>
+    </div>
+    
+    <!-- Slide 6: Key Terminology -->
+    <div class="slide max-w-4xl w-full">
+        <h1>Lesson 3: Key Terminology</h1>
+        <h2 class="text-4xl">Pips</h2>
+        <p><span class="highlight">A Pip</span> is the smallest unit of price movement.</p>
+        <p class="text-2xl"><span class="highlight">Example:</span> EUR/USD moves from 1.1000 to 1.1050. That's a <span class="highlight">50-pip</span> move.</p>
+        
+        <h2 class="text-4xl">Spreads</h2>
+        <p>The difference between the Bid (buy) and Ask (sell) price. It's the fee you pay to your broker.</p>
+
+        <h2 class="text-4xl">Leverage</h2>
+        <p>It's like a loan from your broker. It allows you to control a large position with a small amount of capital.</p>
+        <p class="text-2xl"><span class="highlight">Warning:</span> Leverage can magnify profits, but it can also magnify losses.</p>
+    </div>
+    
+    <!-- Slide 7: Trading Platforms -->
+    <div class="slide max-w-4xl w-full">
+        <h1>Lesson 4: Trading Platforms</h1>
+        <p>These are the tools you'll use to view charts, analyze the market, and place trades.</p>
+        <h2 class="text-4xl">MetaTrader (MT4/MT5)</h2>
+        <p>The industry standard for placing trades. We'll show you how to install it and log in with a demo account.</p>
+        <h2 class="text-4xl">TradingView</h2>
+        <p>The most powerful charting platform. We'll set up your watchlist, apply key indicators, and save your custom layouts.</p>
+        <p class="text-lg mt-4">We'll provide a tutorial video walking you through each setup step-by-step.</p>
+    </div>
+
+    <!-- Slide 8: Risk & Reward -->
+    <div class="slide max-w-4xl w-full">
+        <h1>Lesson 5: Risk & Reward</h1>
+        <p>This is the most important lesson of the week.</p>
+        <h2 class="text-4xl">The Golden Rule: 1:2 RR</h2>
+        <p>For every trade, you must aim to make at least <span class="highlight">twice what you are risking</span>.</p>
+        <p class="text-2xl"><span class="highlight">Example:</span> Risk $50 to make $100.</p>
+        <div class="analogy">
+            <p>Think of it as a business. You wouldn't invest $100 to get back only $50. Trading is no different.</p>
+        </div>
+        <p class="text-lg mt-4">Your discipline with Risk-Reward is your true edge.</p>
+    </div>
+
+    <!-- Slide 9: Weekly Assignment -->
+    <div class="slide max-w-4xl w-full">
+        <h1>Weekly Assignments</h1>
+        <p>Your action items for this week to build your foundation:</p>
+        <ul class="text-2xl">
+            <li>Take a quiz to identify Major, Minor, and Exotic pairs.</li>
+            <li>Download and set up both <span class="highlight">MetaTrader</span> and <span class="highlight">TradingView</span>.</li>
+            <li>Complete a worksheet to define key terms like pips, spreads, and leverage.</li>
+            <li>Use a demo account to place 3 practice trades.</li>
+        </ul>
+    </div>
+</body>
+</html>
